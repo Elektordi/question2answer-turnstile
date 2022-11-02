@@ -112,9 +112,9 @@ class qa_turnstile_captcha
 	{
 		require_once $this->directory.'recaptchalib_turnstile.php';
 
-		if (ini_get('allow_url_fopen'))
-			$recaptcha = new ReCaptcha(qa_opt('turnstile_private_key'));
-		else
+//		if (ini_get('allow_url_fopen'))
+//			$recaptcha = new ReCaptcha(qa_opt('turnstile_private_key'));
+//		else
 			$recaptcha = new ReCaptcha(qa_opt('turnstile_private_key'), new ReCaptchaSocketPostRequestMethod());
 
 		$remoteIp = qa_remote_ip_address();
