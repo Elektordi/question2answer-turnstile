@@ -1,0 +1,11 @@
+{
+	"name": "Turnstile",
+	"description": "Provides support for Cloudflare Turnstile captchas",
+	"version": "0.1",
+	"date": "2022-11-02",
+	"author": "Elektordi",
+	"author_uri": "https://github.com/Elektordi/question2answer-turnstile",
+	"license": "MIT",
+	"min_q2a": "1.7",
+	"load_order": "after_db_init"
+}
